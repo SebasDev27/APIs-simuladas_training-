@@ -1,3 +1,11 @@
 {
-  "appointments": []
+  "appointments": [
+    {
+      "id": "233",
+      "nombre": "Xiaomi 14 ultra",
+      "categoria": "Tecnologia ",
+      "precio": "4234",
+      "cantidad": "23423"
+    }
+  ]
 }
