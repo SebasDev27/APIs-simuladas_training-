@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicación de gestión de productos con funcionalidades para agregar, listar y categorizar productos.">
+    <meta name="keywords" content=" productos, gestión, inventario, categorías, JavaScript">
+    <meta name="sitedomain" content="https://github.com/SebasDev27/APIs-simuladas_training.git">
+    <meta name="organization" content="SebasDev27">
+    <meta name="author" content="Sebastian Marriaga Hoyos">
+    <meta name="designer" content="Sebastian Marriaga Hoyos">
+    <meta name="copyright" content="© 2025 SebasDev27. All rights reserved">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="15days">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Entrenamiento_S3</title>
+</head>
+<body>
+  <!-- Header section with the main title -->
+  <header>
+    <h1>Gestión de Productos</h1>
+  </header>
+  <main>
+    <!-- Product form for adding new products -->
+    <section>
+      <!-- Product input form -->
+      <form id="product-form">
+        <input type="text" id="id" placeholder="ID del producto" required>
+        <input type="text" id="nombre" placeholder="Nombre del producto" required>
+        <input type="number" id="precio" placeholder="Precio" required>
+        <input type="text" id="categoria" placeholder="Categoría" required>
+        <input type="number" id="cantidad" placeholder="Cantidad" required>
+        <button type="submit">Agregar producto</button>
+      </form>
+    </section>
+
+    <!-- Section to display the list of all products -->
+    <section id="product-list-section">
+      <h2>Lista de Productos</h2>
+      <!-- Product list will be rendered here -->
+      <ul id="product-list"></ul>
+      <!-- Actions for selected product will be shown here -->
+      <div id="product-actions" style="display: none;"></div>
+    </section>
+  </main>
+  <!-- Footer with training information -->
+  <footer>
+    <p>Entrenamiento M3S2 - Gestión de Datos</p>
+  </footer>
+
+  <!-- Main JavaScript file for product management logic -->
+  <script src="src/js/gestion-api.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+/* Main body styles: font, layout, background gradient */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: auto;
+    background: linear-gradient(to right, #040a69, #022074ad);
+}
+
+/* Header section: centered title and spacing */
+header {
+    padding: 10px 0;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Main title styles */
+h1 {
+    text-align: center;
+    color: #aa9f9f;
+}
+
+/* Section container: dark background, padding, rounded corners */
+section {
+    margin-bottom: 20px;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Form layout: flexbox, spacing, subtle background, shadow */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 20px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Input group: vertical stacking, responsive sizing */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 220px;
+    min-width: 180px;
+}
+
+/* Label styling: spacing, color, font weight */
+label {
+    margin-bottom: 6px;
+    font-size: 0.97rem;
+    color: #bdbdbd;
+    font-weight: 500;
+}
+
+/* Input fields: padding, border, background, color, transitions */
+input {
+    padding: 10px;
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    background: #181a2a;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s;
+}
+
+/* Input focus effect: border and background change */
+input:focus {
+    border-color: #551ff8;
+    background: #23244a;
+}
+.product-list-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+#product-list{
+  background-color: rgba(148, 143, 143, 0.8);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 8px;
+}
+/* Button styles: color, padding, rounded, hover effect */
+button {
+    width: 28%;
+    padding: 10px;
+    background-color: rgb(85, 15, 248);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+/* Button hover: darker background */
+button:hover {
+    background-color: #3d0fa8;
+}
+
+/* List styles: remove default bullets and padding */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* List item styles: color and spacing */
+li {
+    color: white;
+    padding: 6px;
+    margin-bottom: 5px;
+}
+
+.btn-editar,
+.btn-eliminar {
+  width: 100%;
+  margin-top: 6px;
+}
+
+.btn-editar{
+  background-color: #4caf50; /* Green */
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.btn-editar:hover {
+  background-color: #45a049; /* Darker green */
+}
+.btn-eliminar{
+  background-color: #f44336; /* Red */
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.btn-eliminar:hover {
+  background-color: #d32f2f; /* Darker red */
+}
+
+.product-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+  margin-top: 8px;
+  gap: 8px;
+}
+
+/* Footer: fixed at bottom, background, text color */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #aa9f9f;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.386);
+    padding: 10px ;
+    position: fixed;
+    z-index: 100;
+}
+/* Desktop (min-width: 1024px): wider layout, larger padding */
+@media screen and (min-width: 1024px) {
+  body {
+    max-width: 900px;
+    padding: 40px;
+  }
+  form {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .input-group {
+    min-width: 220px;
+  }
+  footer {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+}
+
+/* Tablet (min-width: 768px and max-width: 1023px): medium layout and spacing */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    max-width: 700px;
+    padding: 24px;
+  }
+  form {
+    flex-direction: row;
+    gap: 16px;
+  }
+  .input-group {
+    min-width: 160px;
+  }
+  button {
+    width: 40%;
+  }
+  footer {
+    font-size: 0.95rem;
+    padding: 8px 0;
+  }
+}
+
+/* Mobile (max-width: 767px): stacked layout, full width, smaller footer */
+@media screen and (max-width: 767px) {
+  html, body {
+    height: 100%;
+    min-height: 100vh;
+  }
+  body {
+    max-width: 100%;
+    padding: 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  main, section {
+    flex: 1 0 auto;
+  }
+  form {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  .input-group {
+    min-width: 100%;
+  }
+  input,
+  button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  button {
+    font-size: 1rem;
+    padding: 10px 0;
+    min-width: 80px;
+    max-width: 500px;
+    max-height: 50px;
+    min-height: 30px;
+    align-self: flex-end;
+  }
+  footer {
+    font-size: 0.85rem;
+    padding: 6px 0;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+    margin-top: auto;
+  }
+}
+
